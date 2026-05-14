@@ -1,0 +1,932 @@
+2026-05-14T10:12:17.727+05:30  INFO 5692 --- [hrms-project] [restartedMain] com.hrms.HrmsProjectApplication          : Starting HrmsProjectApplication using Java 21.0.11 with PID 5692 (C:\Users\Lenovo\Downloads\hrms-Project\target\classes started by Lenovo in C:\Users\Lenovo\Downloads\hrms-Project)
+2026-05-14T10:12:17.760+05:30  INFO 5692 --- [hrms-project] [restartedMain] com.hrms.HrmsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-05-14T10:12:17.935+05:30  INFO 5692 --- [hrms-project] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-14T10:12:17.941+05:30  INFO 5692 --- [hrms-project] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-14T10:12:20.831+05:30  INFO 5692 --- [hrms-project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-14T10:12:21.021+05:30  INFO 5692 --- [hrms-project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 172 ms. Found 6 JPA repository interfaces.
+2026-05-14T10:12:23.212+05:30  INFO 5692 --- [hrms-project] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-05-14T10:12:23.245+05:30  INFO 5692 --- [hrms-project] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-14T10:12:23.247+05:30  INFO 5692 --- [hrms-project] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-05-14T10:12:23.376+05:30  INFO 5692 --- [hrms-project] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-14T10:12:23.376+05:30  INFO 5692 --- [hrms-project] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5432 ms
+2026-05-14T10:12:24.000+05:30  INFO 5692 --- [hrms-project] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-14T10:12:24.275+05:30  INFO 5692 --- [hrms-project] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-05-14T10:12:24.441+05:30  INFO 5692 --- [hrms-project] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-14T10:12:25.158+05:30  INFO 5692 --- [hrms-project] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-14T10:12:25.212+05:30  INFO 5692 --- [hrms-project] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-14T10:12:26.135+05:30  INFO 5692 --- [hrms-project] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35ff69ca
+2026-05-14T10:12:26.141+05:30  INFO 5692 --- [hrms-project] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-14T10:12:26.296+05:30  WARN 5692 --- [hrms-project] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-14T10:12:26.304+05:30  WARN 5692 --- [hrms-project] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-05-14T10:12:28.229+05:30  INFO 5692 --- [hrms-project] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-14T10:12:28.511+05:30  INFO 5692 --- [hrms-project] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-14T10:12:30.870+05:30  INFO 5692 --- [hrms-project] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-05-14T10:12:31.420+05:30  WARN 5692 --- [hrms-project] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-14T10:12:32.380+05:30 DEBUG 5692 --- [hrms-project] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-05-14T10:12:33.678+05:30  INFO 5692 --- [hrms-project] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-05-14T10:12:33.759+05:30  INFO 5692 --- [hrms-project] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-05-14T10:12:33.786+05:30  INFO 5692 --- [hrms-project] [restartedMain] com.hrms.HrmsProjectApplication          : Started HrmsProjectApplication in 17.056 seconds (process running for 18.56)
+2026-05-14T10:13:20.975+05:30  INFO 5692 --- [hrms-project] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-14T10:13:20.976+05:30  INFO 5692 --- [hrms-project] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-14T10:13:20.979+05:30  INFO 5692 --- [hrms-project] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-05-14T10:13:21.012+05:30 DEBUG 5692 --- [hrms-project] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/auth/register
+2026-05-14T10:13:21.024+05:30 DEBUG 5692 --- [hrms-project] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:13:21.027+05:30 DEBUG 5692 --- [hrms-project] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured OPTIONS /api/auth/register
+2026-05-14T10:13:21.067+05:30 DEBUG 5692 --- [hrms-project] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/register
+2026-05-14T10:13:21.516+05:30 DEBUG 5692 --- [hrms-project] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        e1_0.id,
+        e1_0.address,
+        e1_0.department_id,
+        e1_0.email,
+        e1_0.employee_code,
+        e1_0.enabled,
+        e1_0.first_name,
+        e1_0.gender,
+        e1_0.joining_date,
+        e1_0.last_name,
+        e1_0.password,
+        e1_0.phone,
+        e1_0.profile_image,
+        e1_0.role_id,
+        e1_0.salary,
+        e1_0.status 
+    from
+        employees e1_0 
+    where
+        e1_0.email=?
+2026-05-14T10:13:21.555+05:30 DEBUG 5692 --- [hrms-project] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.description 
+    from
+        departments d1_0 
+    where
+        d1_0.id=?
+2026-05-14T10:13:21.581+05:30 DEBUG 5692 --- [hrms-project] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.role_name 
+    from
+        roles r1_0 
+    where
+        r1_0.id=?
+2026-05-14T10:13:21.610+05:30 DEBUG 5692 --- [hrms-project] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/register
+2026-05-14T10:13:21.924+05:30 DEBUG 5692 --- [hrms-project] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    insert 
+    into
+        employees
+        (address, department_id, email, employee_code, enabled, first_name, gender, joining_date, last_name, password, phone, profile_image, role_id, salary, status) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-05-14T10:13:21.984+05:30  WARN 5692 --- [hrms-project] [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1048, SQLState: 23000
+2026-05-14T10:13:21.984+05:30 ERROR 5692 --- [hrms-project] [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Column 'employee_code' cannot be null
+2026-05-14T10:13:22.080+05:30  WARN 5692 --- [hrms-project] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: could not execute statement [Column 'employee_code' cannot be null] [insert into employees (address,department_id,email,employee_code,enabled,first_name,gender,joining_date,last_name,password,phone,profile_image,role_id,salary,status) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)]; SQL [insert into employees (address,department_id,email,employee_code,enabled,first_name,gender,joining_date,last_name,password,phone,profile_image,role_id,salary,status) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)]; constraint [null]]
+2026-05-14T10:14:37.547+05:30  INFO 5692 --- [hrms-project] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2026-05-14T10:14:37.625+05:30  INFO 5692 --- [hrms-project] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-14T10:14:37.635+05:30  INFO 5692 --- [hrms-project] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-14T10:14:37.663+05:30  INFO 5692 --- [hrms-project] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-14T10:14:37.937+05:30  INFO 5692 --- [hrms-project] [restartedMain] com.hrms.HrmsProjectApplication          : Starting HrmsProjectApplication using Java 21.0.11 with PID 5692 (C:\Users\Lenovo\Downloads\hrms-Project\target\classes started by Lenovo in C:\Users\Lenovo\Downloads\hrms-Project)
+2026-05-14T10:14:37.942+05:30  INFO 5692 --- [hrms-project] [restartedMain] com.hrms.HrmsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-05-14T10:14:39.279+05:30  INFO 5692 --- [hrms-project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-14T10:14:39.401+05:30  INFO 5692 --- [hrms-project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115 ms. Found 6 JPA repository interfaces.
+2026-05-14T10:14:40.445+05:30  INFO 5692 --- [hrms-project] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-05-14T10:14:40.453+05:30  INFO 5692 --- [hrms-project] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-14T10:14:40.454+05:30  INFO 5692 --- [hrms-project] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-05-14T10:14:40.543+05:30  INFO 5692 --- [hrms-project] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-14T10:14:40.543+05:30  INFO 5692 --- [hrms-project] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2592 ms
+2026-05-14T10:14:40.931+05:30  INFO 5692 --- [hrms-project] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-14T10:14:40.942+05:30  INFO 5692 --- [hrms-project] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-14T10:14:41.037+05:30  INFO 5692 --- [hrms-project] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-14T10:14:41.043+05:30  INFO 5692 --- [hrms-project] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-05-14T10:14:41.286+05:30  INFO 5692 --- [hrms-project] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@718bcae
+2026-05-14T10:14:41.287+05:30  INFO 5692 --- [hrms-project] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-05-14T10:14:41.292+05:30  WARN 5692 --- [hrms-project] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-14T10:14:41.293+05:30  WARN 5692 --- [hrms-project] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-05-14T10:14:42.917+05:30  INFO 5692 --- [hrms-project] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-14T10:14:43.121+05:30  INFO 5692 --- [hrms-project] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-14T10:14:44.369+05:30  INFO 5692 --- [hrms-project] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-05-14T10:14:44.792+05:30  WARN 5692 --- [hrms-project] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-14T10:14:45.546+05:30 DEBUG 5692 --- [hrms-project] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-05-14T10:14:46.352+05:30  INFO 5692 --- [hrms-project] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-05-14T10:14:46.375+05:30  INFO 5692 --- [hrms-project] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-05-14T10:14:46.395+05:30  INFO 5692 --- [hrms-project] [restartedMain] com.hrms.HrmsProjectApplication          : Started HrmsProjectApplication in 8.571 seconds (process running for 151.169)
+2026-05-14T10:14:46.401+05:30  INFO 5692 --- [hrms-project] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-14T10:15:52.953+05:30  INFO 3076 --- [hrms-project] [restartedMain] com.hrms.HrmsProjectApplication          : Starting HrmsProjectApplication using Java 21.0.11 with PID 3076 (C:\Users\Lenovo\Downloads\hrms-Project\target\classes started by Lenovo in C:\Users\Lenovo\Downloads\hrms-Project)
+2026-05-14T10:15:52.957+05:30  INFO 3076 --- [hrms-project] [restartedMain] com.hrms.HrmsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-05-14T10:15:53.060+05:30  INFO 3076 --- [hrms-project] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-14T10:15:53.060+05:30  INFO 3076 --- [hrms-project] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-14T10:15:55.134+05:30  INFO 3076 --- [hrms-project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-14T10:15:55.337+05:30  INFO 3076 --- [hrms-project] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 180 ms. Found 6 JPA repository interfaces.
+2026-05-14T10:15:57.246+05:30  INFO 3076 --- [hrms-project] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-05-14T10:15:57.282+05:30  INFO 3076 --- [hrms-project] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-14T10:15:57.286+05:30  INFO 3076 --- [hrms-project] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-05-14T10:15:57.398+05:30  INFO 3076 --- [hrms-project] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-14T10:15:57.399+05:30  INFO 3076 --- [hrms-project] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4337 ms
+2026-05-14T10:15:57.922+05:30  INFO 3076 --- [hrms-project] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-14T10:15:58.041+05:30  INFO 3076 --- [hrms-project] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-05-14T10:15:58.119+05:30  INFO 3076 --- [hrms-project] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-14T10:15:58.707+05:30  INFO 3076 --- [hrms-project] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-14T10:15:58.775+05:30  INFO 3076 --- [hrms-project] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-14T10:15:59.414+05:30  INFO 3076 --- [hrms-project] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3edc2710
+2026-05-14T10:15:59.419+05:30  INFO 3076 --- [hrms-project] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-14T10:15:59.503+05:30  WARN 3076 --- [hrms-project] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-14T10:15:59.510+05:30  WARN 3076 --- [hrms-project] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-05-14T10:16:02.134+05:30  INFO 3076 --- [hrms-project] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-14T10:16:02.339+05:30  INFO 3076 --- [hrms-project] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-14T10:16:04.811+05:30  INFO 3076 --- [hrms-project] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-05-14T10:16:05.332+05:30  WARN 3076 --- [hrms-project] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-14T10:16:07.163+05:30 DEBUG 3076 --- [hrms-project] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-05-14T10:16:10.773+05:30  INFO 3076 --- [hrms-project] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-05-14T10:16:10.998+05:30  INFO 3076 --- [hrms-project] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-05-14T10:16:11.083+05:30  INFO 3076 --- [hrms-project] [restartedMain] com.hrms.HrmsProjectApplication          : Started HrmsProjectApplication in 18.926 seconds (process running for 19.918)
+2026-05-14T10:22:36.525+05:30  INFO 3076 --- [hrms-project] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-14T10:22:36.526+05:30  INFO 3076 --- [hrms-project] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-14T10:22:36.530+05:30  INFO 3076 --- [hrms-project] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-05-14T10:22:36.561+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/register
+2026-05-14T10:22:36.967+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        e1_0.id,
+        e1_0.address,
+        e1_0.department_id,
+        e1_0.email,
+        e1_0.employee_code,
+        e1_0.enabled,
+        e1_0.first_name,
+        e1_0.gender,
+        e1_0.joining_date,
+        e1_0.last_name,
+        e1_0.password,
+        e1_0.phone,
+        e1_0.profile_image,
+        e1_0.role_id,
+        e1_0.salary,
+        e1_0.status 
+    from
+        employees e1_0 
+    where
+        e1_0.email=?
+2026-05-14T10:22:36.992+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.description 
+    from
+        departments d1_0 
+    where
+        d1_0.id=?
+2026-05-14T10:22:37.005+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.role_name 
+    from
+        roles r1_0 
+    where
+        r1_0.id=?
+2026-05-14T10:22:37.032+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/register
+2026-05-14T10:22:37.427+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    insert 
+    into
+        employees
+        (address, department_id, email, employee_code, enabled, first_name, gender, joining_date, last_name, password, phone, profile_image, role_id, salary, status) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-05-14T10:22:53.866+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/auth/login
+2026-05-14T10:22:53.867+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:22:53.868+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured OPTIONS /api/auth/login
+2026-05-14T10:22:53.876+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/login
+2026-05-14T10:22:53.881+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        e1_0.id,
+        e1_0.address,
+        e1_0.department_id,
+        e1_0.email,
+        e1_0.employee_code,
+        e1_0.enabled,
+        e1_0.first_name,
+        e1_0.gender,
+        e1_0.joining_date,
+        e1_0.last_name,
+        e1_0.password,
+        e1_0.phone,
+        e1_0.profile_image,
+        e1_0.role_id,
+        e1_0.salary,
+        e1_0.status 
+    from
+        employees e1_0 
+    where
+        e1_0.email=?
+2026-05-14T10:22:53.886+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.description 
+    from
+        departments d1_0 
+    where
+        d1_0.id=?
+2026-05-14T10:22:53.888+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.role_name 
+    from
+        roles r1_0 
+    where
+        r1_0.id=?
+2026-05-14T10:22:53.895+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/login
+2026-05-14T10:22:54.007+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        e1_0.id,
+        e1_0.address,
+        e1_0.department_id,
+        e1_0.email,
+        e1_0.employee_code,
+        e1_0.enabled,
+        e1_0.first_name,
+        e1_0.gender,
+        e1_0.joining_date,
+        e1_0.last_name,
+        e1_0.password,
+        e1_0.phone,
+        e1_0.profile_image,
+        e1_0.role_id,
+        e1_0.salary,
+        e1_0.status 
+    from
+        employees e1_0 
+    where
+        e1_0.email=?
+2026-05-14T10:22:54.107+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-3] o.s.s.a.dao.DaoAuthenticationProvider    : Failed to authenticate since password does not match stored value
+2026-05-14T10:22:54.143+05:30  WARN 3076 --- [hrms-project] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2026-05-14T10:23:03.344+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/login
+2026-05-14T10:23:03.349+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        e1_0.id,
+        e1_0.address,
+        e1_0.department_id,
+        e1_0.email,
+        e1_0.employee_code,
+        e1_0.enabled,
+        e1_0.first_name,
+        e1_0.gender,
+        e1_0.joining_date,
+        e1_0.last_name,
+        e1_0.password,
+        e1_0.phone,
+        e1_0.profile_image,
+        e1_0.role_id,
+        e1_0.salary,
+        e1_0.status 
+    from
+        employees e1_0 
+    where
+        e1_0.email=?
+2026-05-14T10:23:03.352+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.description 
+    from
+        departments d1_0 
+    where
+        d1_0.id=?
+2026-05-14T10:23:03.355+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.role_name 
+    from
+        roles r1_0 
+    where
+        r1_0.id=?
+2026-05-14T10:23:03.360+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/login
+2026-05-14T10:23:03.366+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        e1_0.id,
+        e1_0.address,
+        e1_0.department_id,
+        e1_0.email,
+        e1_0.employee_code,
+        e1_0.enabled,
+        e1_0.first_name,
+        e1_0.gender,
+        e1_0.joining_date,
+        e1_0.last_name,
+        e1_0.password,
+        e1_0.phone,
+        e1_0.profile_image,
+        e1_0.role_id,
+        e1_0.salary,
+        e1_0.status 
+    from
+        employees e1_0 
+    where
+        e1_0.email=?
+2026-05-14T10:23:03.470+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-4] o.s.s.a.dao.DaoAuthenticationProvider    : Failed to authenticate since password does not match stored value
+2026-05-14T10:23:03.473+05:30  WARN 3076 --- [hrms-project] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2026-05-14T10:23:10.329+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/login
+2026-05-14T10:23:10.334+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        e1_0.id,
+        e1_0.address,
+        e1_0.department_id,
+        e1_0.email,
+        e1_0.employee_code,
+        e1_0.enabled,
+        e1_0.first_name,
+        e1_0.gender,
+        e1_0.joining_date,
+        e1_0.last_name,
+        e1_0.password,
+        e1_0.phone,
+        e1_0.profile_image,
+        e1_0.role_id,
+        e1_0.salary,
+        e1_0.status 
+    from
+        employees e1_0 
+    where
+        e1_0.email=?
+2026-05-14T10:23:10.337+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.description 
+    from
+        departments d1_0 
+    where
+        d1_0.id=?
+2026-05-14T10:23:10.339+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.role_name 
+    from
+        roles r1_0 
+    where
+        r1_0.id=?
+2026-05-14T10:23:10.345+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/login
+2026-05-14T10:23:10.350+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        e1_0.id,
+        e1_0.address,
+        e1_0.department_id,
+        e1_0.email,
+        e1_0.employee_code,
+        e1_0.enabled,
+        e1_0.first_name,
+        e1_0.gender,
+        e1_0.joining_date,
+        e1_0.last_name,
+        e1_0.password,
+        e1_0.phone,
+        e1_0.profile_image,
+        e1_0.role_id,
+        e1_0.salary,
+        e1_0.status 
+    from
+        employees e1_0 
+    where
+        e1_0.email=?
+2026-05-14T10:23:10.451+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-5] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2026-05-14T10:37:53.310+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/login
+2026-05-14T10:37:53.318+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        e1_0.id,
+        e1_0.address,
+        e1_0.department_id,
+        e1_0.email,
+        e1_0.employee_code,
+        e1_0.enabled,
+        e1_0.first_name,
+        e1_0.gender,
+        e1_0.joining_date,
+        e1_0.last_name,
+        e1_0.password,
+        e1_0.phone,
+        e1_0.profile_image,
+        e1_0.role_id,
+        e1_0.salary,
+        e1_0.status 
+    from
+        employees e1_0 
+    where
+        e1_0.email=?
+2026-05-14T10:37:53.325+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/login
+2026-05-14T10:37:53.330+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        e1_0.id,
+        e1_0.address,
+        e1_0.department_id,
+        e1_0.email,
+        e1_0.employee_code,
+        e1_0.enabled,
+        e1_0.first_name,
+        e1_0.gender,
+        e1_0.joining_date,
+        e1_0.last_name,
+        e1_0.password,
+        e1_0.phone,
+        e1_0.profile_image,
+        e1_0.role_id,
+        e1_0.salary,
+        e1_0.status 
+    from
+        employees e1_0 
+    where
+        e1_0.email=?
+2026-05-14T10:37:53.433+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-7] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2026-05-14T10:44:08.936+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/employees
+2026-05-14T10:44:08.937+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:44:08.958+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-14T10:44:08.960+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:44:08.978+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/employees
+2026-05-14T10:44:08.979+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:44:08.980+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-14T10:44:08.980+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:44:11.147+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/employees
+2026-05-14T10:44:11.149+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:44:11.154+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-14T10:44:11.155+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:44:11.162+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/employees
+2026-05-14T10:44:11.162+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:44:11.164+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-14T10:44:11.166+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:44:13.180+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/employees
+2026-05-14T10:44:13.181+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:44:13.187+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-14T10:44:13.189+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:44:13.194+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/employees
+2026-05-14T10:44:13.195+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:44:13.196+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-14T10:44:13.197+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:44:14.677+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/employees
+2026-05-14T10:44:14.678+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:44:14.683+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-14T10:44:14.684+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:44:14.693+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/employees
+2026-05-14T10:44:14.694+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:44:14.697+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-14T10:44:14.699+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:47:07.238+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/employees
+2026-05-14T10:47:07.243+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:47:07.251+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing OPTIONS /error
+2026-05-14T10:47:07.252+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:47:09.676+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/employees
+2026-05-14T10:47:09.677+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:47:09.679+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-14T10:47:09.682+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:47:09.689+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/employees
+2026-05-14T10:47:09.689+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:47:09.691+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-14T10:47:09.691+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:47:12.615+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/employees
+2026-05-14T10:47:12.616+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:47:12.620+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-14T10:47:12.622+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:47:12.628+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/employees
+2026-05-14T10:47:12.629+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:47:12.634+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-14T10:47:12.636+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:47:14.199+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/employees
+2026-05-14T10:47:14.201+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:47:14.210+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-14T10:47:14.212+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:47:14.223+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/employees
+2026-05-14T10:47:14.224+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:47:14.235+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-14T10:47:14.236+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:54:44.426+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/employees
+2026-05-14T10:54:44.427+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/employees
+2026-05-14T10:54:44.427+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:54:44.427+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:54:44.429+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /error
+2026-05-14T10:54:44.430+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:54:44.435+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing OPTIONS /error
+2026-05-14T10:54:44.437+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:54:48.672+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/employees
+2026-05-14T10:54:48.673+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:54:48.677+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-14T10:54:48.677+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:54:48.686+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/employees
+2026-05-14T10:54:48.686+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:54:48.688+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-14T10:54:48.689+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:54:51.583+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/employees
+2026-05-14T10:54:51.583+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:54:51.592+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-14T10:54:51.593+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:54:51.604+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/employees
+2026-05-14T10:54:51.605+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:54:51.608+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-05-14T10:54:51.608+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:57:24.447+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/employees
+2026-05-14T10:57:24.448+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:57:24.449+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/employees
+2026-05-14T10:57:24.449+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:57:24.450+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /error
+2026-05-14T10:57:24.451+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:57:24.451+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing OPTIONS /error
+2026-05-14T10:57:24.451+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-05-14T10:58:09.977+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/employee/all
+2026-05-14T10:58:09.989+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        e1_0.id,
+        e1_0.address,
+        e1_0.department_id,
+        e1_0.email,
+        e1_0.employee_code,
+        e1_0.enabled,
+        e1_0.first_name,
+        e1_0.gender,
+        e1_0.joining_date,
+        e1_0.last_name,
+        e1_0.password,
+        e1_0.phone,
+        e1_0.profile_image,
+        e1_0.role_id,
+        e1_0.salary,
+        e1_0.status 
+    from
+        employees e1_0 
+    where
+        e1_0.email=?
+2026-05-14T10:58:10.001+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.description 
+    from
+        departments d1_0 
+    where
+        d1_0.id=?
+2026-05-14T10:58:10.005+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.role_name 
+    from
+        roles r1_0 
+    where
+        r1_0.id=?
+2026-05-14T10:58:10.016+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/employee/all
+2026-05-14T10:58:10.051+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        e1_0.id,
+        e1_0.address,
+        e1_0.department_id,
+        e1_0.email,
+        e1_0.employee_code,
+        e1_0.enabled,
+        e1_0.first_name,
+        e1_0.gender,
+        e1_0.joining_date,
+        e1_0.last_name,
+        e1_0.password,
+        e1_0.phone,
+        e1_0.profile_image,
+        e1_0.role_id,
+        e1_0.salary,
+        e1_0.status 
+    from
+        employees e1_0
+2026-05-14T10:58:10.056+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.description 
+    from
+        departments d1_0 
+    where
+        d1_0.id=?
+2026-05-14T10:58:10.060+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.role_name 
+    from
+        roles r1_0 
+    where
+        r1_0.id=?
+2026-05-14T10:58:10.137+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        a1_0.employee_id,
+        a1_0.id,
+        a1_0.attendance_date,
+        a1_0.check_in_time,
+        a1_0.check_out_time,
+        a1_0.status,
+        a1_0.working_hours 
+    from
+        attendance a1_0 
+    where
+        a1_0.employee_id=?
+2026-05-14T10:58:10.175+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        l1_0.employee_id,
+        l1_0.id,
+        l1_0.from_date,
+        l1_0.leave_status,
+        l1_0.leave_type,
+        l1_0.reason,
+        l1_0.to_date 
+    from
+        leave_requests l1_0 
+    where
+        l1_0.employee_id=?
+2026-05-14T10:58:10.203+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        p1_0.employee_id,
+        p1_0.id,
+        p1_0.allowances,
+        p1_0.basic_salary,
+        p1_0.bonus,
+        p1_0.deductions,
+        p1_0.net_salary,
+        p1_0.payroll_month,
+        p1_0.payroll_status,
+        p1_0.payroll_year,
+        p1_0.present_days,
+        p1_0.tax,
+        p1_0.working_days 
+    from
+        payrolls p1_0 
+    where
+        p1_0.employee_id=?
+2026-05-14T10:58:10.240+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        a1_0.employee_id,
+        a1_0.id,
+        a1_0.attendance_date,
+        a1_0.check_in_time,
+        a1_0.check_out_time,
+        a1_0.status,
+        a1_0.working_hours 
+    from
+        attendance a1_0 
+    where
+        a1_0.employee_id=?
+2026-05-14T10:58:10.243+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        l1_0.employee_id,
+        l1_0.id,
+        l1_0.from_date,
+        l1_0.leave_status,
+        l1_0.leave_type,
+        l1_0.reason,
+        l1_0.to_date 
+    from
+        leave_requests l1_0 
+    where
+        l1_0.employee_id=?
+2026-05-14T10:58:10.245+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        p1_0.employee_id,
+        p1_0.id,
+        p1_0.allowances,
+        p1_0.basic_salary,
+        p1_0.bonus,
+        p1_0.deductions,
+        p1_0.net_salary,
+        p1_0.payroll_month,
+        p1_0.payroll_status,
+        p1_0.payroll_year,
+        p1_0.present_days,
+        p1_0.tax,
+        p1_0.working_days 
+    from
+        payrolls p1_0 
+    where
+        p1_0.employee_id=?
+2026-05-14T10:58:10.251+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        a1_0.employee_id,
+        a1_0.id,
+        a1_0.attendance_date,
+        a1_0.check_in_time,
+        a1_0.check_out_time,
+        a1_0.status,
+        a1_0.working_hours 
+    from
+        attendance a1_0 
+    where
+        a1_0.employee_id=?
+2026-05-14T10:58:10.253+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        l1_0.employee_id,
+        l1_0.id,
+        l1_0.from_date,
+        l1_0.leave_status,
+        l1_0.leave_type,
+        l1_0.reason,
+        l1_0.to_date 
+    from
+        leave_requests l1_0 
+    where
+        l1_0.employee_id=?
+2026-05-14T10:58:10.256+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        p1_0.employee_id,
+        p1_0.id,
+        p1_0.allowances,
+        p1_0.basic_salary,
+        p1_0.bonus,
+        p1_0.deductions,
+        p1_0.net_salary,
+        p1_0.payroll_month,
+        p1_0.payroll_status,
+        p1_0.payroll_year,
+        p1_0.present_days,
+        p1_0.tax,
+        p1_0.working_days 
+    from
+        payrolls p1_0 
+    where
+        p1_0.employee_id=?
+2026-05-14T10:58:10.259+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        a1_0.employee_id,
+        a1_0.id,
+        a1_0.attendance_date,
+        a1_0.check_in_time,
+        a1_0.check_out_time,
+        a1_0.status,
+        a1_0.working_hours 
+    from
+        attendance a1_0 
+    where
+        a1_0.employee_id=?
+2026-05-14T10:58:10.261+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        l1_0.employee_id,
+        l1_0.id,
+        l1_0.from_date,
+        l1_0.leave_status,
+        l1_0.leave_type,
+        l1_0.reason,
+        l1_0.to_date 
+    from
+        leave_requests l1_0 
+    where
+        l1_0.employee_id=?
+2026-05-14T10:58:10.264+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        p1_0.employee_id,
+        p1_0.id,
+        p1_0.allowances,
+        p1_0.basic_salary,
+        p1_0.bonus,
+        p1_0.deductions,
+        p1_0.net_salary,
+        p1_0.payroll_month,
+        p1_0.payroll_status,
+        p1_0.payroll_year,
+        p1_0.present_days,
+        p1_0.tax,
+        p1_0.working_days 
+    from
+        payrolls p1_0 
+    where
+        p1_0.employee_id=?
+2026-05-14T10:58:10.268+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        a1_0.employee_id,
+        a1_0.id,
+        a1_0.attendance_date,
+        a1_0.check_in_time,
+        a1_0.check_out_time,
+        a1_0.status,
+        a1_0.working_hours 
+    from
+        attendance a1_0 
+    where
+        a1_0.employee_id=?
+2026-05-14T10:58:10.270+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        l1_0.employee_id,
+        l1_0.id,
+        l1_0.from_date,
+        l1_0.leave_status,
+        l1_0.leave_type,
+        l1_0.reason,
+        l1_0.to_date 
+    from
+        leave_requests l1_0 
+    where
+        l1_0.employee_id=?
+2026-05-14T10:58:10.273+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        p1_0.employee_id,
+        p1_0.id,
+        p1_0.allowances,
+        p1_0.basic_salary,
+        p1_0.bonus,
+        p1_0.deductions,
+        p1_0.net_salary,
+        p1_0.payroll_month,
+        p1_0.payroll_status,
+        p1_0.payroll_year,
+        p1_0.present_days,
+        p1_0.tax,
+        p1_0.working_days 
+    from
+        payrolls p1_0 
+    where
+        p1_0.employee_id=?
+2026-05-14T10:59:28.481+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/login
+2026-05-14T10:59:28.489+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        e1_0.id,
+        e1_0.address,
+        e1_0.department_id,
+        e1_0.email,
+        e1_0.employee_code,
+        e1_0.enabled,
+        e1_0.first_name,
+        e1_0.gender,
+        e1_0.joining_date,
+        e1_0.last_name,
+        e1_0.password,
+        e1_0.phone,
+        e1_0.profile_image,
+        e1_0.role_id,
+        e1_0.salary,
+        e1_0.status 
+    from
+        employees e1_0 
+    where
+        e1_0.email=?
+2026-05-14T10:59:28.494+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.description 
+    from
+        departments d1_0 
+    where
+        d1_0.id=?
+2026-05-14T10:59:28.499+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.role_name 
+    from
+        roles r1_0 
+    where
+        r1_0.id=?
+2026-05-14T10:59:28.505+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/login
+2026-05-14T10:59:28.510+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        e1_0.id,
+        e1_0.address,
+        e1_0.department_id,
+        e1_0.email,
+        e1_0.employee_code,
+        e1_0.enabled,
+        e1_0.first_name,
+        e1_0.gender,
+        e1_0.joining_date,
+        e1_0.last_name,
+        e1_0.password,
+        e1_0.phone,
+        e1_0.profile_image,
+        e1_0.role_id,
+        e1_0.salary,
+        e1_0.status 
+    from
+        employees e1_0 
+    where
+        e1_0.email=?
+2026-05-14T10:59:28.515+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.description 
+    from
+        departments d1_0 
+    where
+        d1_0.id=?
+2026-05-14T10:59:28.517+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.role_name 
+    from
+        roles r1_0 
+    where
+        r1_0.id=?
+2026-05-14T10:59:28.636+05:30 DEBUG 3076 --- [hrms-project] [http-nio-8080-exec-2] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
